@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Me</title>
     <style>
+         @keyframes bounce {
+            0% {transform: translateX(0);}
+            50% {transform: translateX(20px);}
+            100% {transform:translateX(0);}
+        }
+        .btn {
+            width: 100px;
+            height: 100px;
+            background: red;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            animation: bounce 1s infinite;
+        }
         .container {
             display: flex;
             justify-content: center;
@@ -18,6 +32,8 @@
             border-color: black;
             background-color: red;
             
+            
+            
         }
             
         
@@ -27,7 +43,8 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn" onclick="alert('You Are Gay')">Click Me</button>
+        <button class="btn" onclick="alert('You are gay')">Click Me</button>
+       
     </div>
    
     
