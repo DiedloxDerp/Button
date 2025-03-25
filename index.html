@@ -3,50 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click Me</title>
+    <title>Document</title>
     <style>
-         @keyframes bounce {
-            0% {transform: translateX(0);}
-            50% {transform: translateX(20px);}
-            100% {transform:translateX(0);}
-        }
-        .btn {
-            width: 100px;
-            height: 100px;
-            background: red;
+        div {
             text-align: center;
-            color: white;
-            line-height: 100px;
-            animation: bounce 1s infinite;
+            margin-top: 100px;
         }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: pink;
-        }
-        .btn {
-            color: black;
-            border-radius: 10%;
-            border-color: black;
-            background-color: red;
-            
-            
-            
-        }
-            
-        
-        
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="btn" onclick="alert('You are gay')">Click Me</button>
-       
-    </div>
-   
+  <div>
+    <button id="changeText">click lil bro</button>
+    <h1 id="title"><header></header></h1>
+
+  </div>
     
+    
+       
+   
+
+    <script>
+       let button = document.getElementById('changeText');
+       button.addEventListener('click', function(){
+            alert('Button clicked!');
+       });
+       let title = document.getElementById('title');
+            button.addEventListener('click', function(){
+                title.textContent = 'You are gay';
+            })
+
+
+        
+    </script>
 </body>
 </html>
